@@ -20,8 +20,8 @@ async def on_member_join(member):
 
     if channel:
         embed = discord.Embed(
-            title="🎉 Hoş Geldin!",
-            description=f"{member.mention}, sunucumuza hoş geldin!",
+            title="🎉 Welcome!",
+            description=f"{member.mention}, Welcome channel!",
             color=discord.Color.green()
         )
         embed.set_thumbnail(url=member.display_avatar.url)
@@ -35,8 +35,8 @@ async def on_member_remove(member):
 
     if channel:
         embed = discord.Embed(
-            title="👋 Görüşürüz!",
-            description=f"**{member.name}** sunucumuzdan ayrıldı.",
+            title="👋 Goodbye!",
+            description=f"**{member.name}** has exit channel.",
             color=discord.Color.red()
         )
         embed.set_thumbnail(url=member.display_avatar.url)
