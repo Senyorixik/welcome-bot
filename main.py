@@ -25,7 +25,7 @@ async def on_member_join(member):
             color=discord.Color.green()
         )
         embed.set_thumbnail(url=member.display_avatar.url)
-        embed.set_footer(text=f"Üye sayısı: {member.guild.member_count}")
+        embed.set_footer(text=f"Member count: {member.guild.member_count}")
 
         await channel.send(embed=embed)
 
