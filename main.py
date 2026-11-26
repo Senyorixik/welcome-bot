@@ -44,3 +44,4 @@ async def on_member_remove(member):
 
         await channel.send(embed=embed)
 
+bot.run(os.getenv("DISCORD_TOKEN"))
