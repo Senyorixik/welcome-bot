@@ -7,7 +7,8 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-WELCOME_CHANNEL_ID = int(os.getenv("WELCOME_CHANNEL_ID") or "1575479299891536104")
+channel_id = os.getenv("WELCOME_CHANNEL_ID", "1575479299891536104").strip()
+WELCOME_CHANNEL_ID = int(channel_id)
 
 @bot.event
 async def on_ready():
