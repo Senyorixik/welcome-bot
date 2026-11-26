@@ -44,4 +44,3 @@ async def on_member_remove(member):
 
         await channel.send(embed=embed)
 
-bot.run("MTU3NTQ4Njc0ODU4MDkxMzIwMw.GiJ-CM.2ZkQiGicOKo5c2d4QuiWIABDtHbKoaycgyNzCA")
