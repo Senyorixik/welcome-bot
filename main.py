@@ -1,4 +1,4 @@
-
+import os
 import discord
 from discord.ext import commands
 
@@ -7,7 +7,7 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-WELCOME_CHANNEL_ID = 0  # Kanal ID buraya
+WELCOME_CHANNEL_ID = int(os.getenv("WELCOME_CHANNEL_ID", "1575479299891536104"))  # Kanal ID buraya
 
 @bot.event
 async def on_ready():
